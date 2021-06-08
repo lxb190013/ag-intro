@@ -1,3 +1,6 @@
+conda_env:
+	conda env create --name=more-map-and-call --file=env.yaml
+
 # A rule - this rule will only run if file0.txt doesn't exist.
 file0.txt:
 	echo "foo" > file0.txt
