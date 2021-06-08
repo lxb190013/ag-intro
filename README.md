@@ -12,5 +12,6 @@ This will be the third commit
 ```bash
 git clone https://github.com/lxb190013/ag-intro
 cd ag-intro
+conda env create --name=more-map-and-call --file=env.yaml
 make
 ```
