@@ -8,3 +8,6 @@ test.paired_end.sorted.bam:
 
 conda_env:
 	conda env create --name=more-map-and-call --file=env.yaml
+
+clean:
+	rm genome.gtf test.paired_end.sorted.bam
