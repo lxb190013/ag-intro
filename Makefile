@@ -1,15 +1,10 @@
+download_data: genome.gtf test.paired_end.sorted.bam
+
+genome.gtf:
+	wget https://github.com/nf-core/test-datasets/raw/modules/data/genomics/homo_sapiens/genome/genome.gtf
+
+test.paired_end.sorted.bam:
+	wget https://github.com/nf-core/test-datasets/raw/modules/data/genomics/homo_sapiens/illumina/bam/test.paired_end.sorted.bam
+
 conda_env:
 	conda env create --name=more-map-and-call --file=env.yaml
-
-# A rule - this rule will only run if file0.txt doesn't exist.
-file0.txt:
-	echo "foo" > file0.txt
-file1.txt: file0.txt
-	cat file0.txt > file1.txt
-	@cat file0.txt >> file1.txt
-	-@echo 'hello'
-file2.txt file3.txt: file0.txt file1.txt
-	touch file2.txt
-	touch file3.txt
-clean:
-	rm file*.txt
