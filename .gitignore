@@ -1,3 +1,5 @@
 file*.txt
 genome.gtf
 test.paired_end.sorted.bam
+slurm-2337.out
+slurm-2341.out
