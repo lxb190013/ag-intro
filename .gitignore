@@ -7,3 +7,5 @@ slurm-2341.out
 *.out
 # results
 counts.txt*
+cov_genome.gtf
+cov_counts.txt

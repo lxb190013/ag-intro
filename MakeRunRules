@@ -1,0 +1,12 @@
+all: download_data featurecounts
+
+run test batch job:
+	sbatch submit_job.sh
+
+run cov_genome.gtf:
+	sbatch submit_cov.sh
+
+or
+BONUS
+# Submit a job array with index values of 1 and 2
+	sbatch --array=1-2    -N1 tmp
