@@ -15,3 +15,6 @@ cd ag-intro
 make conda_env
 make
 ```
+
+## sbatch GMAP
+

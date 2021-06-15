@@ -1,9 +1,13 @@
 all: download_data featurecounts
 
-run test batch job:
-	sbatch submit_job.sh
+featurecounts: test.counts.txt
 
-run cov_genome.gtf:
+test.counts.txt:
+	sbatch submit_test.sh
+
+featurecounts: cov_counts.txt
+
+cov_counts.txt:
 	sbatch submit_cov.sh
 
 or
