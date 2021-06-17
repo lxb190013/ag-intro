@@ -10,4 +10,4 @@
 #SBATCH --mail-type=ALL
 
 ml load subread
-featureCounts -t gene -g gene_id -a cov_genome.gtf -o counts.txt test.paired_end.sorted.bam
+featureCounts -t gene -g gene_id -a sars_genome.gtf -o counts.txt sars.paired_end.sorted.bam

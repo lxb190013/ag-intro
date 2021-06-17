@@ -10,7 +10,7 @@ featurecounts: cov_counts.txt
 cov_counts.txt:
 	sbatch submit_cov.sh
 
-or
-BONUS
+# or
+# BONUS
 # Submit a job array with index values of 1 and 2
 	sbatch --array=1-2    -N1 tmp
