@@ -9,3 +9,24 @@ slurm-2341.out
 counts.txt*
 cov_genome.gtf
 cov_counts.txt
+# nextflow
+work/
+data/
+results/
+.nextflow
+.nextflow.log*
+*.pyc
+nextflow-report.html
+timeline-report.html
+trace.txt
+flowchart.*
+.Rproj.user/
+*.Rproj
+.DS_Store
+.Rproj.user
+*.simg
+conda/*
+*/conda/*
+timeline.html
+nextflow.html
+nextflow

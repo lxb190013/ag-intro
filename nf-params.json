@@ -1,0 +1,5 @@
+{
+    "input": "/scratch/applied-genomics/cov-t-rnaseq/samplesheet.csv",
+    "email": "lxb190013@utdallas.edu",
+    "genome": "GRCh37"
+}
